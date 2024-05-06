@@ -5,11 +5,24 @@
 #    pip-compile --output-file requirements.txt requirements.in
 #
 arrow==0.12.1
-certifi==2018.11.29       # via requests
-chardet==3.0.4            # via requests
-idna==2.8                 # via requests
+    # via -r requirements.in
+certifi==2023.7.22
+    # via requests
+charset-normalizer==3.3.2
+    # via requests
+idna==2.8
+    # via requests
 python-dateutil==2.7.5
-requests==2.21.0
+    # via
+    #   -r requirements.in
+    #   arrow
+requests==2.31.0
+    # via -r requirements.in
 six==1.12.0
+    # via
+    #   -r requirements.in
+    #   python-dateutil
 tabulate==0.8.2
-urllib3==1.24.2           # via requests
+    # via -r requirements.in
+urllib3==1.26.18
+    # via requests
